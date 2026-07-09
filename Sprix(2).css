@@ -1,0 +1,189 @@
+/* إعدادات الخطوط والخلفية العامة للموقع */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #1a6511;
+    color: #333;
+    margin: 0;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* زيادة المسافة قليلاً بين الأقسام */
+}
+
+/* التنسيق الموحد لكل السيكشنز (الأقسام الثلاثة) */
+.page-section {
+    position: relative; /* لتثبيت الشارات في الأعلى */
+    background-color: #ffffff;
+    padding: 50px 40px 40px 40px; /* زيادة الـ padding العلوي ليعطي مساحة للشارة */
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* التنسيق الجمالي للكلمات (Home - Body - Form) في أعلى السيكشنز */
+.section-badge {
+    display: inline-block;
+    background-color: #0056b3; /* اللون الأزرق الافتراضي لـ Home */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 16px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* ألوان إضافية للشارات الأخرى */
+.bg-orange {
+    background-color: #e67e22; /* اللون البرتقالي لـ Body */
+}
+
+.bg-green {
+    background-color: #27ae60; /* اللون الأخضر لـ Form */
+}
+
+h1 {
+    color: #1a6511;
+    font-size: 36px;
+    margin-top: 0;
+}
+
+h2, h3 {
+    color: #222;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.highlight {
+    color: #0056b3;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* الأزرار والروابط */
+.cta-buttons {
+    margin: 20px 0;
+}
+
+.btn-primary {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #003d82;
+    transform: translateY(-2px);
+}
+
+.link-more {
+    color: #0056b3;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.link-more:hover {
+    text-decoration: underline;
+}
+
+/* الصور */
+.main-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* معرض الصور */
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.image-box img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.image-box p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* تعديل الفورم */
+.card {
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #444;
+    text-align: left;
+}
+
+input {
+    padding: 12px;
+    border: solid 1px #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0,86,179,0.3);
+}
+
+.btn-submit {
+    background-color: #1a6511;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #11440b;
+}
